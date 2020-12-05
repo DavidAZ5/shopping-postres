@@ -1,0 +1,35 @@
+<div [ngClass]="{'sticky' : isSticky}">
+    <app-header-sticky *ngIf="isSticky"></app-header-sticky>
+    <div class="category-slider" >
+        <div  class="category-slider__item" routerLink="/productos/todo" routerLinkActive="category-slider__item--active">
+            <div >
+                <div class="titulo">Promociones</div>
+                <div  class="category-slider__item__border-bottom"></div>
+            </div>
+        </div>
+        <div  class="category-slider__item" routerLink="/productos/poke-bowls" routerLinkActive="category-slider__item--active">
+            <div >
+                <div class="titulo">Poke Bowls</div>
+                <div  class="category-slider__item__border-bottom"></div>
+            </div>
+        </div>
+        <div  class="category-slider__item" routerLink="/productos/nigaris" routerLinkActive="category-slider__item--active">
+            <div >
+                <div class="titulo">Nigaris</div>
+                <div  class="category-slider__item__border-bottom"></div>
+            </div>
+        </div>
+        <div  class="category-slider__item" routerLink="/productos/postres" routerLinkActive="category-slider__item--active">
+            <div >
+                <div class="titulo">Postres</div>
+                <div  class="category-slider__item__border-bottom"></div>
+            </div>
+        </div>
+        <div  class="category-slider__item" routerLink="/productos/bebidas" routerLinkActive="category-slider__item--active">
+            <div >
+                <div class="titulo">Bebidas</div>
+                <div  class="category-slider__item__border-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>

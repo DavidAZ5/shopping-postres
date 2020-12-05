@@ -1,0 +1,20 @@
+a> h2 {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    margin: 0;
+    margin-bottom: 0.3em;
+    margin-top: 2rem;
+    color: #000;
+    font-size: 35px;
+    /*font-weight: 400;*/
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none !important;
+    color: #2C3E50 !important;
+}
+@media screen and (max-width: 920px) {
+    a> h2 {
+        display: none;
+    }
+}

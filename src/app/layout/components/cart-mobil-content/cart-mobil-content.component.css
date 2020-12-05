@@ -1,0 +1,117 @@
+.product {
+    padding: 8px 0;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 0px;
+}
+
+.product-image-container {
+    margin-right: 10px;
+    flex: 0 0 100px;
+   /* height: 90px;*/
+   height: auto;
+}
+
+.product-image-container .product-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+.progressive-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+}
+
+.product-image img {
+    border-radius: 8px;
+}
+
+.progressive-image-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: auto;*/
+    z-index: 1;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transform: translateZ(0);
+}
+
+img {
+    vertical-align: middle;
+    margin-top: 10px;
+    height: 70px;
+}
+
+.product__info {
+    flex: 1 1 auto;
+    flex-direction: column;
+    transition: all .3s;
+    /*display: flex;*/
+    justify-content: space-between;
+}
+
+.detail{
+    flex: 1;
+}
+
+.truncate{
+    font-size: 14.5px;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.detail strong {
+    margin-top: 1.5px;
+    font-weight: 600;
+    font-size: 15.5px;
+    display: block;
+}
+
+.control {
+    margin-left: -2px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.control button {
+    border: 1px solid #030047;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.04);
+    transition: box-shadow .25s ease-in-out;
+}
+
+.control span {
+    margin: 0 5px;
+    min-width: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.control button b {
+    font-weight: 600;
+    color: #030047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control button b svg {
+    width: 17px;
+    height: 17px;
+}
