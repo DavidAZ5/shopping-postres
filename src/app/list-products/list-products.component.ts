@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Producto } from '../interfaces/producto';
 
 @Component({
   selector: 'app-list-products',
@@ -28,6 +29,45 @@ export class ListProductsComponent implements OnInit {
 
 
   }
+
+  data:Producto[] = [
+    {
+      id:1,
+      nombre: 'ffff',
+      precio: 12
+    },
+    {
+      id:2,
+      nombre: 'hhh',
+      precio: 8
+    },
+    {
+      id:3,
+      nombre: 'iiiiii',
+      precio: 7
+    },
+    {
+      id:4,
+      nombre: 'oooo',
+      precio: 20
+    },
+    {
+      id:5,
+      nombre: 'eeeee',
+      precio: 15
+    },
+    {
+      id:6,
+      nombre: 'ttt',
+      precio: 14
+    },
+    {
+      id:7,
+      nombre: 'aaa',
+      precio: 25
+    },
+
+  ]
 
 
 }

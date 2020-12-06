@@ -148,7 +148,7 @@
     display: block;
     position: relative;
     /*margin-right: 10px;*/
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 .cart_icon span {
     position: absolute;
@@ -176,4 +176,27 @@
 
 .cerrar{
     display: none !important;
+}
+
+
+.cart_empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    flex: 1;
+    margin-bottom: 80px;
+}
+.cart_empty_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart_empty_wrapper p {
+    font-weight: 600;
+    color: #2C3E50;
+    margin-top: 15px;
+}
+.draw_wrapper {
+    width: 70px;
 }

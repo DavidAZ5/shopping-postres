@@ -78,6 +78,8 @@ img {
     background-color: #fff;
     box-shadow: 0 5px 25px rgba(0,0,0,.04);
     transition: box-shadow .25s ease-in-out;
+    cursor: pointer;
+    outline: none;
 }
 .b {
     font-weight: 600;
@@ -113,4 +115,10 @@ img {
     height: auto;
     max-width: 100%;
     border-radius: 8px;
+}
+
+.clic{
+    background-color: #E91E63 !important;
+    color: #fff !important;
+    fill: #fff !important;
 }

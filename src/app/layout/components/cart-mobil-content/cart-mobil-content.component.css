@@ -86,7 +86,7 @@ img {
 }
 
 .control button {
-    border: 1px solid #030047;
+    border: 1px solid #E91E63;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -101,11 +101,12 @@ img {
     display: flex;
     justify-content: center;
     font-weight: 500;
+    color: #E91E63;
 }
 
 .control button b {
     font-weight: 600;
-    color: #030047;
+    color: #E91E63;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,4 +115,14 @@ img {
 .control button b svg {
     width: 17px;
     height: 17px;
+}
+
+.control button b svg path {
+    fill: #E91E63;
+}
+
+.clic{
+    background-color: #E91E63 !important;
+    color: #fff !important;
+    fill: #fff !important;
 }
