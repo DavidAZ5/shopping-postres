@@ -168,6 +168,12 @@
 }
 
 
+.disabled{
+    background-color: #f0f0f8;
+    color: #e7779d !important;
+    fill:  #e7779d !important;
+}
+
 @media(min-width: 921px) {
     .car{
         display: none !important;

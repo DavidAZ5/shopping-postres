@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CartService,ProductoCarrito } from '../../../services/cart.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -8,7 +8,7 @@ import { takeUntil } from 'rxjs/operators';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent implements OnInit {
+export class CartComponent implements OnInit, OnDestroy {
   private destroy$: Subject<void> = new Subject();
   CartProductos: ProductoCarrito[]=[];
   compraTotal:number=0;
@@ -30,6 +30,25 @@ export class CartComponent implements OnInit {
       sumPrecios=sumPrecios + p.cantidad * p.price;
     }
     return sumPrecios;
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
+  enviarWhatsapp(){
+    var text = "Hola, D'Thaly quiero solicitar este pedido: || ";
+    var total = 0;
+    for (let p_c of this.CartProductos ){
+      text = text +p_c.cantidad+" unidad(es) de "+p_c.name+" con precio de S/."+p_c.price+ " || ";
+      total = total + p_c.cantidad * p_c.price;
+    }
+    text=text+"El total del pedido es S/"+total;
+    var numero_whatsapp = "989069102";
+    window.open(`https://api.whatsapp.com/send?phone=51${numero_whatsapp}&text=${text}`,"_blank");
+    //window.location.href=`https://api.whatsapp.com/send?phone=51990334381&text=${text}`;
+    this.cart.vaciarCart();
   }
 
 }

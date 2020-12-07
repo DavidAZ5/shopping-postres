@@ -71,7 +71,7 @@ img {
     margin-bottom: 0.2rem;
 }
 .button {
-    border: 1px solid #030047;
+    border: 1px solid #E91E63;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -83,7 +83,7 @@ img {
 }
 .b {
     font-weight: 600;
-    color: #030047;
+    color: #E91E63;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,10 +94,14 @@ img {
     display: flex;
     justify-content: center;
     font-weight: 500;
+    color: #E91E63;
 }
 .svg {
     width: 17px;
     height: 17px;
+}
+.svg path{
+    fill: #E91E63;
 }
 .product__info{
     /*display: flex;*/

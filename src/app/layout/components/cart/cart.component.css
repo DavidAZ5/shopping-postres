@@ -244,3 +244,9 @@ aside.cart .button_order_wrapper .Button.dark.disabled p {
 .draw_wrapper {
     width: 70px;
 }
+
+.disabled{
+    background-color: #f0f0f8;
+    color: #e7779d !important;
+    fill:  #e7779d !important;
+}
